@@ -27,3 +27,13 @@ let addCar2 = () => {
 addCar2()
 console.log(cars);
 
+// Read 
+
+cars.map(({id, name, year, engine}) => {
+    console.log( id, name , engine, year);
+})
+console.log('---------------------------------------------------------------');
+cars.forEach(({id, name, year, engine}) => {
+    console.log( id, name , engine, year);
+})
+
