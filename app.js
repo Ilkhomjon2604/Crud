@@ -47,3 +47,19 @@ const onUpdate = (car) =>{
 onUpdate({id :1, key: 'status', value: 'Sold'})
 // onUpdate({id :1, key: 'status', value: 'Sold', koy : 'engine', vol : 1.3})
 
+
+
+// // Delete 
+
+const onDelete = (id) =>{
+    let filtered =  cars.filter(value => value.id !== id)
+    console.log(filtered);
+}
+onDelete(3)
+
+
+// const del = (id) =>{
+//     return cars.map(value => value.id === id ? delete value : value)
+// }
+
+// console.log(del(1));
