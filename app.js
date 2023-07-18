@@ -37,3 +37,13 @@ cars.forEach(({id, name, year, engine}) => {
     console.log( id, name , engine, year);
 })
 
+// Update 
+
+const onUpdate = (car) =>{
+    let updated = cars.map(value => value.id === car.id ? {...value, [car.key] : car.value} : value)
+    // let updated = cars.map(value => value.id === car.id ? {...value, [car.key] : car.value, [car.koy]: car.vol} : value)
+    console.log(updated);
+}
+onUpdate({id :1, key: 'status', value: 'Sold'})
+// onUpdate({id :1, key: 'status', value: 'Sold', koy : 'engine', vol : 1.3})
+
