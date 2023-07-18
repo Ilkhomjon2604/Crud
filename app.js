@@ -14,3 +14,16 @@ let cars = [
 
 // Methods : Map(), fill(), ForEach(),  flat(), sort(), filter(), reduce(), every(), some(), copyWith(), Array.from(), newSet(), new Map(), flatMap(); 
 
+// Creat 
+
+let addCar = (car) =>{
+    cars = [...cars, car]
+}
+addCar({id: cars.length +1, year: 2018, engine: 1.8, name: 'Nexia 3'})
+
+let addCar2 = () => {
+    cars = [...cars , {id: cars.length +1, year: 2012, engine: 1.6, name: 'Nexia 2'}]
+}
+addCar2()
+console.log(cars);
+
